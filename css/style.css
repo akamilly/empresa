@@ -4,8 +4,8 @@
     --background-color: rgba(253, 253, 253, 0.555);
 
     --fundo-menu-lateral: #66513B;
-    --fundo-claro: #a6afb4;
-    --fundo-escuro: #2f3538;
+    --fundo-claro: #927e69;
+    --fundo-escuro: #705941;
 
     --borda-clara: #f0feff;
     --borda-escura: #DED6C7;
@@ -16,7 +16,7 @@
     --texto-hover: #6c8a8d;
     --texto-opaco: #b5bbbe;
 
-    --cor-detalhes: #7e8588;
+    --cor-detalhes: #000000;
 
     --texto-titulo-claro: #a0b3b4;
     --texto-titulo-escuro: #1f2525;
@@ -132,12 +132,26 @@ a {
     #header {
         left: -300px;
     }
+    #main {
+        margin-left: 0;
+    }
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
 }
 
 /* Menu do Header  */
 .nav-menu {
     padding: 30px 0 0 0;
 }
+ #main {
+        margin-left: 0;
+    }
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
 
 .nav-menu * {
     padding: 0;
@@ -167,7 +181,8 @@ a {
 
 .nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover>a {
     text-decoration: none;
-    color: var(--texto-claro)
+    color: var(--texto-claro);
+    font-weight: 600;
 }
 
 .nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover>a i {
@@ -209,6 +224,7 @@ a {
 
 #hero p {
     color: #66513B;
+    margin-top: 15px;
     margin-bottom: 5px;
     font-size: 26px;
 }
@@ -218,4 +234,225 @@ a {
     padding-bottom: 4px;
     letter-spacing: 2px;
     border-bottom: 3px solid #66513B;
+}
+
+
+
+
+
+/* Estrutura Base - Corpo */
+#main {
+    margin-left: 300px;
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Seções e Titulos */
+section {
+    padding: 60px 0;
+    overflow: hidden;
+    /* clara */
+    /* background: var(--section-clara); */
+    background: #9f7667;
+    
+}
+
+.section-bg {
+    /* escura */
+    /* background: var(--section-escura); */
+    background: #57362b;
+    color: var(--texto-claro);
+}
+
+/* Estrutura do Titulo Seção */
+.section-title {
+    padding-bottom: 30px;
+}
+
+/* titulo H2 */
+.section-title h2 {
+    color: var(--texto-escuro);
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+/* efeito parallax */
+@media (min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero h2 {
+        font-size: 90px;
+        line-height: 75px;
+        margin-bottom: 45px;
+    }
+
+    #hero p {
+        font-size: 28px;
+    }
+}
+
+
+/** Seções Gerais === tag Section ***/
+section {
+    padding: 60px 0;
+    overflow: hidden;
+    background: var(--fundo-claro)
+}
+
+.section-bg {
+    background: var(--fundo-escuro);
+    color: var(--texto-claro);
+}
+
+.section-title {
+    padding-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    color: var(--texto-titulo-escuro);
+    position: relative;
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--cor-detalhes);
+    bottom: 0;
+    left: 0;
+}
+
+.section-title p {
+    margin-bottom: 0;
+}
+
+/* Sobre */
+.sobre .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--cor-detalhes);
+}
+
+.sobre .content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sobre .content ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sobre .content ul strong {
+    margin-left: 10px;
+}
+
+.sobre .content ul i {
+    font-size: 20px;
+    color: var(--cor-detalhes);
+    margin-right: 10px;
+    line-height: 0;
+}
+
+/* Conquistas */
+.conquistas {
+    padding-bottom: 30px;
+}
+
+.conquistas .count-box {
+    padding: 30px;
+    width: 100%;
+}
+
+.conquistas .count-box i {
+    display: block;
+    font-size: 44px;
+    color: var(--cor-detalhes);
+    float: left;
+    line-height: 0;
+}
+
+.conquistas .count-box span {
+    font-size: 48px;
+    line-height: 40px;
+    display: block;
+    font-weight: 700;
+    color: var(--texto-escuro);
+    margin-left: 60px;
+}
+
+.conquistas .count-box p {
+    padding: 15px 0 0 0;
+    margin: 0 0 0 60px;
+    font-family: "Open", sans-serif;
+    color: var(--texto-escuro);
+}
+
+/* Opcional */
+.conquistas .count-box i:hover {
+    color: var(--texto-branco);
+    transition: 0.4s;
+}
+
+/*  Skills // Habilidades // Vendas  */
+.skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+
+.skills .progress .skill {
+    padding: 0;
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+}
+
+.skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+
+.skills .progress-bar-bg {
+    background: var(--fundo-claro);
+    height: 10px;
+}
+
+.skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: 2s;
+    background: var(--cor-detalhes);
 }
