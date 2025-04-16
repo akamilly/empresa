@@ -1,3 +1,14 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+ 
+/* Estilos Fonts 
+Lora: 
+    font-family: "Lora", serif;
+*/
+
+
+
 /* variaveis para cores  */
 :root {
 
@@ -338,6 +349,7 @@ section {
     padding-bottom: 20px;
     color: var(--texto-titulo-escuro);
     position: relative;
+    font-family: "Lora", serif;
 }
 
 .section-title h2::after {
@@ -360,6 +372,7 @@ section {
     font-weight: 700;
     font-size: 26px;
     color: var(--cor-detalhes);
+    font-family: "Lora", serif;
 }
 
 .sobre .content ul {
@@ -387,6 +400,7 @@ section {
 /* Conquistas */
 .conquistas {
     padding-bottom: 30px;
+    font-family: "Lora", serif;
 }
 
 .conquistas .count-box {
@@ -456,3 +470,4 @@ section {
     transition: 2s;
     background: var(--cor-detalhes);
 }
+
