@@ -137,6 +137,15 @@ a {
 }
 
 /* Ajuste para o corpo do conteúdo */
+/* Estrutura Base - Corpo */
+#main {
+    margin-left: 300px;
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
 
 /* menu responsivo */
 @media (max-width: 1199px) {
@@ -247,20 +256,6 @@ a {
     border-bottom: 3px solid #66513B;
 }
 
-
-
-
-
-/* Estrutura Base - Corpo */
-#main {
-    margin-left: 300px;
-}
-
-.container {
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
 /* Seções e Titulos */
 section {
     padding: 60px 0;
@@ -315,9 +310,9 @@ section {
 
 @media (max-width: 768px) {
     #hero h2 {
-        font-size: 90px;
-        line-height: 75px;
-        margin-bottom: 45px;
+        font-size: 90px; 
+        line-height: 1px;
+        margin-bottom: 20px;
     }
 
     #hero p {
@@ -466,6 +461,7 @@ section {
 
 .skills .progress-bar {
     width: 1px;
+    
     height: 10px;
     transition: 2s;
     background: var(--cor-detalhes);
