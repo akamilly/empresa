@@ -79,9 +79,12 @@
 
       }, true);
     }
-
   });
 
+
+  const portfolioLightbox = GLightbox({
+    selector: '.portifolio-lightbox'
+  });
 
 
 })()
